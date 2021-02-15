@@ -1,40 +1,37 @@
 """
-Correlate columns of a CSV file
-2021-01-03
+Path analysis system
+2021-02-14
 """
-import numpy as np
-import seaborn as sn
-from scipy.stats import kendalltau
-from scipy.stats import spearmanr
-from scipy.stats import rankdata
-from scipy.stats import norm
+import array as ary
 import csv
-import os,stat
-import statistics
 import math
-from math import sqrt
-from types import resolve_bases
-import matplotlib as mptlib
-from matplotlib import *
-import matplotlib.pyplot as plt
-from matplotlib.widgets import Button
+import os
+import stat
+import statistics
 import tkinter as tk
 import tkinter.font as tkfnt
-import pandas as pd
-from pandas import DataFrame
-from factor_analyzer import FactorAnalyzer
-import array as ary
-import scipy.stats as sps
-from scipy.stats import chi2_contingency 
-import matplotlib.widgets as wid
-from matplotlib.widgets import RadioButtons, Button
-from scipy.stats import rankdata
+from datetime import date
+from math import sqrt
 from tkinter import *
 from tkinter import messagebox as mBox
-from tkinter.filedialog import * 
-from tkinter.simpledialog import * 
 from tkinter import ttk
-from datetime import date
+from tkinter.filedialog import *
+from tkinter.simpledialog import *
+from types import resolve_bases
+
+import matplotlib as mptlib
+import matplotlib.pyplot as plt
+import matplotlib.widgets as wid
+import numpy as np
+import pandas as pd
+import scipy.stats as sps
+import seaborn as sn
+from factor_analyzer import FactorAnalyzer
+from matplotlib import *
+from matplotlib.widgets import Button, RadioButtons
+from pandas import DataFrame
+from scipy.stats import chi2_contingency, kendalltau, norm, rankdata, spearmanr
+
 nowDate = date.today().year.__str__()
 myCopyright = '© G J Boris Allan, ' + str(nowDate)
 root=tk.Tk()

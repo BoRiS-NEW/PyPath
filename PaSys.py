@@ -2,18 +2,18 @@
 Correlate columns of a CSV file
 2021-01-03
 """
-import csv
-import os,stat
-import statistics
-import math
+import numpy as np
 import seaborn as sn
 from scipy.stats import kendalltau
 from scipy.stats import spearmanr
 from scipy.stats import rankdata
 from scipy.stats import norm
+import csv
+import os,stat
+import statistics
+import math
 from math import sqrt
 from types import resolve_bases
-import numpy as np
 import matplotlib as mptlib
 from matplotlib import *
 import matplotlib.pyplot as plt

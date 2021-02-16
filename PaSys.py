@@ -278,8 +278,8 @@ while (toContinue):
     plt.suptitle(labelY + ' vs ' + labelX + '\n' + str(indexLen) + ' ' + labelDf.values[0][0] + ' rankings', 
             fontsize=titleFont, y=0.95, weight='bold')
     plt.figtext(0.98, 0.02, myCopyright, horizontalalignment='right', fontsize=annotFont, weight='light')
-    plt.xlabel(labelX + ', ' + labelDf.values[0][0] + ' ranking', fontsize=labelFont, weight='bold')
-    plt.ylabel(labelY + ', ' + labelDf.values[0][0] + ' ranking', fontsize=labelFont, weight='bold') 
+    plt.xlabel(labelX, fontsize=labelFont, weight='bold')
+    plt.ylabel(labelY, fontsize=labelFont, weight='bold') 
     plt.xticks([1,(indexLen+1)/2,indexLen],['Low\n1','Mid','High\n'+str(indexLen)], weight='bold', fontsize=annotFont)
     plt.yticks([1,(indexLen+1)/2,indexLen],['1\nLow','Mid','High\n'+str(indexLen)], weight='bold', fontsize=annotFont)
     # ax.set_xticklabels(['Low','High'])
